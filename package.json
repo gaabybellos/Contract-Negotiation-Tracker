@@ -9,7 +9,12 @@
     "start": "NODE_ENV=production node dist/index.js",
     "preview": "vite preview --host",
     "check": "tsc --noEmit",
-    "format": "prettier --write ."
+    "test": "vitest run",
+    "format": "prettier --write .",
+    "pw:install": "pnpm --dir frameworks/ContractTrackerPlaywright install && pnpm --dir frameworks/ContractTrackerPlaywright exec playwright install",
+    "pw:test": "pnpm --dir frameworks/ContractTrackerPlaywright run test",
+    "pw:ui": "pnpm --dir frameworks/ContractTrackerPlaywright run test:ui",
+    "pw:report": "pnpm --dir frameworks/ContractTrackerPlaywright run report"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",

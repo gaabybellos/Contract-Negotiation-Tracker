@@ -265,6 +265,70 @@ To export your data for backup, use the Export feature in the contract dropdown 
 
 ---
 
+## 🧪 QA AI First Architecture (Technical Delivery)
+
+This repository includes a complete QA architecture built from scratch as part of a technical assessment, adhering strictly to a **QA AI First strategy**.
+
+### Strategy Summary
+The core philosophy is **Discovery Before Automation**. Tests are only created after the product features are mapped and traced:
+`project-discovery → test-planner → test-generator → test-runner → test-healer`
+
+### Documentation & Governance
+- **QA Documentation**: All QA artifacts (specs, plans, module maps, discovery) live centrally in the `Docs/qa` directory.
+- **Agent Instructions**: Rules and prompts for AI agents are defined in `AGENTS.md` and located across `.codex/agents/`, `.claude/agents/`, and `skills/`.
+- **E2E Framework**: The internal Playwright test repository is fully isolated within `frameworks/ContractTrackerPlaywright/`.
+- **Playwright MCP**: Playwright MCP is leveraged by agents specifically for real-time browser inspection, evidence capture, and DOM debugging during test generation and healing. The reproducible execution path relies on the CLI.
+
+### How to Run the Validations
+
+**1. Prepare Environment (pnpm 10.4.1)**
+Ensure you have Node.js 18+ and install dependencies with `pnpm 10.4.1` (which is enforced via `packageManager` config).
+```bash
+corepack enable
+pnpm install
+```
+
+**2. Type Check (Static Analysis)**
+```bash
+pnpm check
+```
+*(Note: Expected to fail initially due to known TypeScript interface mismatches in the product source, e.g., `ComparisonModal.tsx` and `sampleData.ts`. This is classified as a product bug and does not block the E2E UI tests.)*
+
+**3. Unit Tests (Vitest)**
+```bash
+pnpm test
+```
+Runs isolated tests for pure functions (e.g., `textDiff.test.ts` for comparison statistics logic).
+
+**4. E2E Tests (Playwright)**
+First, ensure the Playwright framework dependencies and browsers are installed:
+```bash
+cd frameworks/ContractTrackerPlaywright
+npm install
+npx playwright install chromium
+cd ../..
+```
+Then, execute the E2E suite against the local development environment:
+```bash
+# Starts the Vite dev server and runs the Playwright suite automatically
+pnpm pw:test
+```
+
+### Current Coverage Summary
+- **Unit (`CNT-CMP-001`)**: Text diff computation (additions, removals, changes).
+- **E2E (`CNT-CTR-001`)**: Contract CRUD and `localStorage` persistence survival across page reloads.
+- **E2E (`CNT-CLA-001` & `CNT-CMP-001`)**: 3-Text clause model validation, save cycle, and the visual comparison modal diffing.
+
+### Known Limitations
+- The product codebase contains TypeScript strict mode violations that currently fail `pnpm check`.
+- State mutation relies purely on `localStorage`. The E2E suite handles this via the `clearLocalStorage` utility to prevent test state pollution.
+- Mobile/Responsive UI tests and advanced module flows (Templates, Filters, Playbook) are documented in the backlog but not yet automated.
+
+### Video Walkthrough
+> VIDEO LINK: pending
+
+---
+
 ## 🤝 Contributing
 
 We welcome feedback, bug reports, and feature discussions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
@@ -306,3 +370,4 @@ For commercial licensing inquiries or enterprise deployments, please contact the
 - [Radix UI](https://www.radix-ui.com/) for accessible primitives
 - [Lucide](https://lucide.dev/) for the icon set
 - [Tailwind CSS](https://tailwindcss.com/) for utility-first styling
+

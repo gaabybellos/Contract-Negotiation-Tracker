@@ -25,7 +25,7 @@ export default defineConfig({
   },
   server: {
     port: 3000,
-    strictPort: false, // Will find next available port if 3000 is busy
+    strictPort: true, // Forces port 3000 to ensure Playwright can always find it
     host: true,
     allowedHosts: [
       ".manuspre.computer",

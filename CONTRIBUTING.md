@@ -52,3 +52,4 @@ For commercial licensing inquiries or other questions, please contact the projec
 ---
 
 © 2026 Gianni Carfi Pavia. All rights reserved.
+
