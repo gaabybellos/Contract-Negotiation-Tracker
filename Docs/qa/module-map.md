@@ -59,8 +59,14 @@ Likely technical files:
 
 - `client/src/components/DashboardStats.tsx`
 - `client/src/components/FilterBar.tsx`
-- `client/src/components/ClauseTable.tsx`
-- `client/src/contexts/NegotiationContext.tsx`
+  - `client/src/components/ClauseTable.tsx`
+  - `client/src/contexts/NegotiationContext.tsx`
+
+  Artifacts:
+
+  - `Docs/qa/modules/filters/discovery.md`
+  - `Docs/qa/modules/filters/cases.md`
+  - `Docs/qa/modules/filters/spec.md`
 
 ## versions
 
