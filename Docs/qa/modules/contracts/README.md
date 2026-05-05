@@ -7,6 +7,6 @@ Contract creation, selection, duplication, completion, archiving, deletion, pape
 ## Files
 
 - `discovery.md`: module reverse engineering.
-- `casos.md`: module test cases.
+- `cases.md`: module test cases.
 - `spec.md`: module automation specs.
 

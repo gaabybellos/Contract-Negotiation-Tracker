@@ -7,7 +7,7 @@ Required inputs:
 - `AGENTS.md`
 - `Docs/qa/module-map.md`
 - `Docs/qa/templates/template-automation-spec.md`
-- relevant module `casos.md`
+- relevant module `cases.md`
 - relevant module `spec.md`
 - `Docs/qa/automation-specs.md`
 

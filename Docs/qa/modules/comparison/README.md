@@ -7,6 +7,6 @@ Text comparison, diff statistics, inline view, side-by-side view, redline toggle
 ## Files
 
 - `discovery.md`: module reverse engineering.
-- `casos.md`: module test cases.
+- `cases.md`: module test cases.
 - `spec.md`: module automation specs.
 

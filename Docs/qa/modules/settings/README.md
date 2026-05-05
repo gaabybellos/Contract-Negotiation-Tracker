@@ -7,6 +7,6 @@ Owners, impact categories, subcategories, column configuration, theme, onboardin
 ## Files
 
 - `discovery.md`: module reverse engineering.
-- `casos.md`: module test cases.
+- `cases.md`: module test cases.
 - `spec.md`: module automation specs.
 

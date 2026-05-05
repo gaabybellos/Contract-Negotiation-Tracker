@@ -7,6 +7,6 @@ Clause creation, editing, viewing, deletion, metadata, annotations, and the impl
 ## Files
 
 - `discovery.md`: module reverse engineering.
-- `casos.md`: module test cases.
+- `cases.md`: module test cases.
 - `spec.md`: module automation specs.
 

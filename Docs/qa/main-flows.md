@@ -26,8 +26,8 @@ The user opens comparison for a clause and switches between baseline vs theirs, 
 
 Primary modules:
 
-- `comparacao`
-- `clausulas`
+- `comparison`
+- `clauses`
 
 ## Save And Restore Versions
 
@@ -35,9 +35,9 @@ The user saves a version snapshot with round and party attribution, then may res
 
 Primary modules:
 
-- `versoes`
-- `comparacao`
-- `clausulas`
+- `versions`
+- `comparison`
+- `clauses`
 
 ## Filter Clause List
 
@@ -45,8 +45,8 @@ The user filters clauses by status, priority, owner, impact category, risk level
 
 Primary modules:
 
-- `filtros`
-- `clausulas`
+- `filters`
+- `clauses`
 
 ## Manage Templates
 
@@ -55,8 +55,8 @@ The user creates, edits, duplicates, deletes, imports, and uses templates with t
 Primary modules:
 
 - `templates`
-- `importacao-exportacao`
-- `contratos`
+- `import-export`
+- `contracts`
 
 ## Use Playbook Guidance
 
@@ -65,7 +65,7 @@ The user reviews playbook topics and guidance linked to clause classification.
 Primary modules:
 
 - `playbook`
-- `clausulas`
+- `clauses`
 
 ## Track Timeline
 
@@ -74,5 +74,5 @@ The user records negotiation events with dates, types, descriptions, and notes.
 Primary modules:
 
 - `timeline`
-- `contratos`
+- `contracts`
 

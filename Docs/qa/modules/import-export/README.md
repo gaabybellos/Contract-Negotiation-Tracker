@@ -7,6 +7,6 @@ Clause import, template import, document parsing, CSV import/export, JSON export
 ## Files
 
 - `discovery.md`: module reverse engineering.
-- `casos.md`: module test cases.
+- `cases.md`: module test cases.
 - `spec.md`: module automation specs.
 

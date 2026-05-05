@@ -7,6 +7,6 @@ Negotiation events, dates, notes, event ordering, creation, editing, deletion, a
 ## Files
 
 - `discovery.md`: module reverse engineering.
-- `casos.md`: module test cases.
+- `cases.md`: module test cases.
 - `spec.md`: module automation specs.
 

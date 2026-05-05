@@ -39,7 +39,7 @@ Rules:
 Every automated flow should connect:
 
 1. Discovery in `Docs/qa/reverse-engineering.md`, `Docs/qa/main-flows.md`, or a module `discovery.md`.
-2. Test case in `Docs/qa/test-cases.md` or a module `casos.md`.
+2. Test case in `Docs/qa/test-cases.md` or a module `cases.md`.
 3. Automation spec in `Docs/qa/automation-specs.md` or a module `spec.md`.
 4. Future executable test in the appropriate test layer.
 5. Execution report in `Docs/qa/executions/` when relevant.

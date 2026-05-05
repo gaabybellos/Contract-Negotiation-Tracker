@@ -7,6 +7,6 @@ Template creation, editing, duplication, deletion, template clauses, document im
 ## Files
 
 - `discovery.md`: module reverse engineering.
-- `casos.md`: module test cases.
+- `cases.md`: module test cases.
 - `spec.md`: module automation specs.
 
